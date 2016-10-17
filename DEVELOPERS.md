@@ -33,7 +33,7 @@ options.
 
 The test suite can build what we call an "option coverage" file if the `ACK_OPTION_COVERAGE`
 environment variable is set to a truthy value.  The option coverage file lists all of the options
-provided to the various options provided to the various invocations of ack used in the test suite.
+provided and the various invocations of ack used in the test suite.  The script
 `dev/display-options-coverage.pl` reads this file and prints the options that are *not* used in
 the test suite.  This helps find new options that haven't had tests written for them yet.
 
